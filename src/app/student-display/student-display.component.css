@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.div{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: whitesmoke;
+   
+
+}
+.name{
+    gap: 10px;
+}
+
+   x
+
+.form{
+    gap: 30px;
+
+}
+.more-balance {
+ color: red;
+  }
+  

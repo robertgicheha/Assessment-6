@@ -1,0 +1,33 @@
+<div class="div">
+
+<table>
+
+    <thead>
+      <tr>
+        <th id="name">Name</th>
+
+        <th id="id">Id</th>
+
+        <th id="bal">Balance</th>
+       
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students "
+      [class.more-balance]="hasMoreBalance(student) ">
+        <td id="name">{{ student.name }}</td>
+        
+        <td id="id">{{ student.id }}</td>
+
+        <td id="bal">{{ student.balance }}</td>
+       
+      </tr>
+    </tbody>
+  </table>
+  <div class="form">
+    <form (ngSubmit)="updateBalance(students)">
+        <input type="number"   name="newBalance" required>
+        <button type="submit">Update Balance</button>
+      </form>
+  </div>
+ 
+  </div>
